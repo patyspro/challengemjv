@@ -10,7 +10,7 @@ são: se o arquivo existe, se é possível lê-lo, se é de fato um arquivo, etc
 
 #### Apresentar alternativas de instanciação de objetos com contrutor ou metódos singleton:
 
-Arquivo teste [MainArquivo]("/src/desafio)
+Arquivo teste [MainArquivo](/src/desafio)
 Na construção de um objeto file podemos passar o parâmetro path (uma String) que se trata do caminho do arquivo.
 ```
 File arquivo = new File ("caminho do arquivo");
