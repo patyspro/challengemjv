@@ -2,7 +2,11 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="usando_file_path/src"/>
 	<classpathentry kind="src" path="usingFileReaderFileWriter/src"/>
 	<classpathentry kind="output" path="usando_file_path/bin"/>
+=======
+	<classpathentry kind="output" path="src"/>
+>>>>>>> matheus
 </classpath>
