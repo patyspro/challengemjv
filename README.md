@@ -1,60 +1,41 @@
-# challengemjv
-Desafio Mjv
+# Desafio Classes
 
-### Classe File (Pesquisa):
+Este repositório tem o objetivo de esclarecer a utilização de algumas classes da linguagem JAVA. Destas classes o file, path e paths têm a função de criar, organizar e verificar a disposição de arquivos dentro de pastas.
 
-#### Realizar uma breve descrição da classe em questão:
+## Autores
 
-A classe java.io.File destina-se a obter informações sobre o arquivo e não sobre seu conteúdo. Portanto alguns exemplos do que podemos obter com essa classe
-são: se o arquivo existe, se é possível lê-lo, se é de fato um arquivo, etc.
+- [Daniella Magalhães](https://github.com/DaniellaMagalhaesSiqueira)
+- [Emerson Luiz](https://github.com/emerge8)
+- [Lucas Serra](https://github.com/lucas-serra)
+- [Matheus Alencar](https://github.com/matlencar)
+- [Patricia Sprovieri](https://github.com/patyspro)
+- [Stefani Barros](https://github.com/ste-fani)
 
-#### Apresentar alternativas de instanciação de objetos com contrutor ou metódos singleton:
+## Classe File
+ A classe File contém vários métodos para trabalhar com o nome do caminho, excluindo e renomeando arquivos, criando novos diretórios, listando o conteúdo de um diretório e determinando vários atributos comuns de arquivos e diretórios.
 
-Arquivo teste [MainArquivo](src/desafio/MainArquivo.java)
-Na construção de um objeto file podemos passar o parâmetro path (uma String) que se trata do caminho do arquivo.
-```
-File arquivo = new File ("caminho do arquivo");
-System.out.println(arq.exists());
-```
-iniciando o trecho de código acima no método main com um caminho válido de um arquivo existente obtemos o retorno true no console.
+ ## Classe Path
+ A classe Path inclui vários métodos que podem ser usados ​​para obter informações sobre o caminho, acessar elementos do caminho, converter o caminho em outras formas ou extrair partes de um caminho. Também existem métodos para combinar a string do caminho e métodos para remover redundâncias em um caminho.
 
-#### Apresentar no mínimo 04 métodos mais utilizados destacando o seu contrato (tipo retorno + nome + parâmetros):
+ ## Classe Paths
+A classe Paths contém métodos estáticos para converter string em um caminho ou URI em caminho.
 
-O método no trecho tem o seguinte contrato: public boolean exists
-Ou seja, temos um método público podendo ser acessado fora da classe que retorna um boolean que tem um nome de exists não recebendo nenhum parâmetro.
+## Diferenças encontradas entre as classes File e Path
 
-```
-File arq = new File("D:\\PROJETOS\\MJV_JAVA\\aulas\\aula_6\\src\\desafio\\texto.txt");
-		File diretorio = new File ("D:\\PROJETOS\\MJV_JAVA\\aulas\\aula_6\\src\\desafio\\");
-		
-		System.out.println(arq.exists());//se houver arquivo
-		System.out.println(arq.getPath());//retorna o caminho do arquivo
-		System.out.println(arq.length());//retorna a quantidade de bytes do arquivo
-		System.out.println(arq.isFile());//verifica se é um arquivo
-		System.out.println(arq.isDirectory());//verifica se é um diretório
-		
-		System.out.println(diretorio.isDirectory());
-```
-Nesse último trecho da classe File temos outros testes realizados no nosso objeto arq e no objeto diretorio criado logo depois.
-Destacando o método de nome getPath temos o seguinte contrato: é público, retorna uma String e não recebe parâmetros. Esse método,
-segundo a documentação, converte seu caminho para uma string, esse retorno usa o caractere padrão para separação de nomes do diretório.
-O trecho acima nos daria um resultado para o cenário de ter no mesmo diretorio um arquivo chamado texto.txt com 22 caracteres gravados nele:
-true
-D:\PROJETOS\MJV_JAVA\aulas\aula_6\src\desafio\texto.txt
-22
-true
-false
-true
+### java.io.File
+A classe File é uma representação abstrata de nomes de caminho de arquivo e diretório, suas instâncias são imutáveis, ou seja, uma vez criadas, o caminho abstrato criado nunca será alterado.
 
-Como podemos observar no método isDirectory a diferença entre o objeto arq e o objeto diretorio é apenas o nome do arquivo.
-O método é público e retorna um booleano que verifica se o objeto é um diretório e não recebe parâmetros.
+### java.nio.file.Path
+Path também cria um objeto que pode ser usado para localizar um arquivo em um sistema de arquivos. Da mesma forma, ele pode realizar todas as operações que podem ser feitas com a classe File, mas ao invés de usar um construtor, cria-se uma instância utilizando o método estático ``` java.nio.file.Paths.get() ```
 
-Parecido com esse o método isFile verifica se o objeto criado é um arquivo, retorna um booleano e não recebe parâmetros.
+## Como contribuir com este repositório
+1. Na página do repositório clique em [Issues](https://github.com/patyspro/challengemjv/issues)
+2. Encontre a área escrita ``` New Issue ```
+3. Informe um título e descrever a sua contribuição.
+4. Clique em ``` Submit new issue ```
+## Referências
 
-#### Apresentar se alguns dos métodos é sobrecarregado:
-
-Nessa classe o método createTempFile é um método sobrecarregado. Em sua primeira assinatura (ou contrato) temos um método estático
-o retorno um tipo File e como parâmetros um prefixo e um sufixo ambos Strings para gerar seu nome. Na sua sobrecarga temos um método
-estático que também retorna um File, mas recebe três parâmetros: prefixo e sufixo ambos Strings e um File que se trata do diretório
-em que será criado o arquivo temporário.
-
+- [Java.io.File Class in Java](https://www.geeksforgeeks.org/file-class-in-java/)
+- [Path Operations](https://docs.oracle.com/javase/tutorial/essential/io/pathOps.html)
+- [java.nio.file.Paths Class in Java](https://www.geeksforgeeks.org/java-nio-file-paths-class-in-java/)
+- [Java - Path vs File](https://www.baeldung.com/java-path-vs-file)
