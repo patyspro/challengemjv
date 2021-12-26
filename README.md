@@ -7,7 +7,7 @@ Este repositório tem o objetivo de esclarecer a utilização de algumas classes
 - [Daniella Magalhães](https://github.com/DaniellaMagalhaesSiqueira)
 - [Emerson Luiz](https://github.com/emerge8)
 - [Lucas Serra](https://github.com/lucas-serra)
-- Matheus Alencar
+- [Matheus Alencar](https://github.com/matlencar)
 - [Patricia Sprovieri](https://github.com/patyspro)
 - [Stefani Barros](https://github.com/ste-fani)
 
