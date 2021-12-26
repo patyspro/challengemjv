@@ -23,7 +23,7 @@ public class TesteEscrita {
 		
 		bw.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
 		bw.newLine();
-		bw.write("Lorem Impsum executado com sucesso");
+		bw.write("huiashauidhauishduisadhsuiahduiashduisahduiasdhauisd");
 		bw.close();
 			
 	
