@@ -15,7 +15,7 @@ são: se o arquivo existe, se é possível lê-lo, se é de fato um arquivo, etc
 
 ### Alternativas de instanciação de objetos com contrutor ou metódos singleton:
 
-Arquivo teste [ArquivoPrincipal](classe-file/ArquivoPrincipal.java)
+Arquivo teste [ArquivoPrincipal](classes/file/ArquivoPrincipal.java)
 na construção de um objeto file podemos passar o parâmetro path (uma String) que se trata do caminho do arquivo.
 
 ```
@@ -60,7 +60,7 @@ O método é público e retorna um booleano que verifica se o objeto é um diret
 
 Parecido com esse o método isFile verifica se o objeto criado é um arquivo, retorna um booleano e não recebe parâmetros.
 
-### Métodos sobrecarregados:
+### Método sobrecarregado:
 
 Nessa classe o método createTempFile é um método sobrecarregado. Em sua primeira assinatura (ou contrato) temos um método estático
 o retorno um tipo File e como parâmetros um prefixo e um sufixo ambos Strings para gerar seu nome. Na sua sobrecarga temos um método
@@ -71,15 +71,45 @@ em que será criado o arquivo temporário.
 
 ### Descrição:
 
-A Pathclasse inclui vários métodos que podem ser usados ​​para obter informações sobre o caminho, acessar elementos do caminho, converter o caminho em outras formas ou extrair partes de um caminho. Também existem métodos para combinar a string do caminho e métodos para remover redundâncias em um caminho.
+A classe Path inclui vários métodos que podem ser usados ​​para obter informações sobre o caminho, acessar elementos do caminho, converter o caminho em outras formas ou extrair partes de um caminho. Também existem métodos para combinar a string do caminho e métodos para remover redundâncias em um caminho.
 
 ### Alternativas de instanciação de objetos com contrutor ou metódos singleton:
 
 Uma instância Path contém as informações usadas para especificar a localização de um arquivo ou diretório. No momento em que é definido, o Path é fornecido com uma série de um ou mais nomes, um elemento raiz ou um nome de arquivo pode ser incluído, mas nenhum é necessário. O Path pode consistir em apenas um único diretório ou nome de arquivo.
 
-### Métodos mais utilizados destacando o seu contrato (tipo retorno + nome + parâmetros):
+- String
+```
+Path path = (Path)Paths.get("/usr/local/bin");
+System.out.println(path);
+```
 
-### Métodos sobrecarregados:
+- URI
+
+```
+Path path = Paths.get(URI.create("D:\\PROJETOS\\MJV_JAVA\\aulas\\aula_6\\src\\desafio\\texto.txt"));
+System.out.println(path);
+```
+
+### Métodos mais utilizados destacando o seu contrato (tipo retorno + nome + parâmetros):
+```
+File diretorio = new File("src/classes/pathEPaths","Criando Diretorio");
+diretorio.mkdir();
+Path caminho = Paths.get(diretorio.toURI() );
+
+System.out.println(caminho);
+System.out.println ("getFileName:"+ path.getFileName ());
+System.out.println("getParent:"+ path.getParent ());
+System.out.println ("getRoot:"+ path.getRoot ());
+```
+
+Retorna:
+- C:\Users\stefani\Desktop\devschool-mjv\grupo\challengemjv\src\classes\pathEPaths\Criando Diretorio
+- getFileName:texto.txt
+- getParent:C:\Users\stefa\Desktop\devschool-mjv\grupo\challengemjv\src\classes\pathEPaths
+- getRoot:C:\
+
+
+### Método sobrecarregado:
 
 ## Classe Paths
 
@@ -88,8 +118,20 @@ Uma instância Path contém as informações usadas para especificar a localiza�
 A classe Paths contém métodos estáticos para converter string de caminho ou URI em caminho.
 
 ### Alternativas de instanciação de objetos com contrutor ou metódos singleton:
+Possui duas formas de instanciar, uma utiliza strings e outra utilizando URI.
 
-> .
+- String
+```
+Path path = (Path)Paths.get("/usr", "local", "bin");
+System.out.println(path);
+```
+
+- URI
+
+```
+Path path = (Path)Paths.get("https://github.com/patyspro/challengemjv");
+System.out.println(path);
+```
 
 ### Métodos mais utilizados destacando o seu contrato (tipo retorno + nome + parâmetros):
 
@@ -150,4 +192,4 @@ System.out.println(path);
 https://github.com/patyspro/challengemjv
 ```
 
-### Métodos sobrecarregados
+### Método sobrecarregado
