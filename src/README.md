@@ -105,7 +105,7 @@ System.out.println ("getRoot:"+ path.getRoot ());
 Retorna:
 - C:\Users\stefani\Desktop\devschool-mjv\grupo\challengemjv\src\classes\pathEPaths\Criando Diretorio
 - getFileName:texto.txt
-- getParent:C:\Users\stefa\Desktop\devschool-mjv\grupo\challengemjv\src\classes\pathEPaths
+- getParent:C:\Users\stefani\Desktop\devschool-mjv\grupo\challengemjv\src\classes\pathEPaths
 - getRoot:C:\
 
 
