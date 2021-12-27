@@ -12,6 +12,7 @@ public class FabricaArquivoTexto {
 			if(new File(diretorio.getAbsolutePath() + "/" + nome + ".txt").exists()) {
 				File arquivo = new File(diretorio.getAbsolutePath() + "/" + nome + ".txt");
 				System.out.println("O arquivo " + nome + ".txt já existe.\n");
+				System.out.println("Caminho do arquivo:  " + diretorio.getPath()+ "/" + nome + ".txt\n");
 				return arquivo;
 				
 			}else {				
@@ -32,8 +33,7 @@ public class FabricaArquivoTexto {
 			try {
 				arquivo.createNewFile();
 			} catch (IOException e) {
-				System.out.println(e);
-				e.printStackTrace();
+				System.out.println("Não foi possível criar o arquivo");
 			}
 			System.out.println("Diretorio e arquivo criado agora: " + arquivo.getPath());
 			return arquivo;
