@@ -15,7 +15,7 @@ são: se o arquivo existe, se é possível lê-lo, se é de fato um arquivo, etc
 
 ### Alternativas de instanciação de objetos com contrutor ou metódos singleton:
 
-Arquivo teste [MainArquivo](classe-file/MainArquivo.java)
+Arquivo teste [ArquivoPrincipal](classe-file/ArquivoPrincipal.java)
 na construção de um objeto file podemos passar o parâmetro path (uma String) que se trata do caminho do arquivo.
 
 ```
