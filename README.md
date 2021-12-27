@@ -12,12 +12,12 @@ Este repositório tem o objetivo de esclarecer a utilização de algumas classes
 - [Stefani Barros](https://github.com/ste-fani)
 
 ## Classe File
- A classe File contém vários métodos para trabalhar com o nome do caminho, excluindo e renomeando arquivos, criando novos diretórios, listando o conteúdo de um diretório e determinando vários atributos comuns de arquivos e diretórios.
+A classe File contém vários métodos para trabalhar com o nome do caminho, excluindo e renomeando arquivos, criando novos diretórios, listando o conteúdo de um diretório e determinando vários atributos comuns de arquivos e diretórios.
 
- ## Classe Path
- A classe Path inclui vários métodos que podem ser usados ​​para obter informações sobre o caminho, acessar elementos do caminho, converter o caminho em outras formas ou extrair partes de um caminho. Também existem métodos para combinar a string do caminho e métodos para remover redundâncias em um caminho.
+## Classe Path
+A classe Path inclui vários métodos que podem ser usados ​​para obter informações sobre o caminho, acessar elementos do caminho, converter o caminho em outras formas ou extrair partes de um caminho. Também existem métodos para combinar a string do caminho e métodos para remover redundâncias em um caminho.
 
- ## Classe Paths
+## Classe Paths
 A classe Paths contém métodos estáticos para converter string em um caminho ou URI em caminho.
 
 ## Diferenças encontradas entre as classes File e Path
