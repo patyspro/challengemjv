@@ -1,7 +1,8 @@
+package classes.file.fileWriter;
+
 import java.io.File;
 
 public class RelatorioArquivo {
-
     public static void exibirRelatorio(File file) {
         if(file.exists()) {
             //retorna true caso seja um arquivo

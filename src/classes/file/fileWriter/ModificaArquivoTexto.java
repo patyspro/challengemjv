@@ -1,3 +1,5 @@
+package classes.file.fileWriter;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -6,7 +8,6 @@ import java.io.Writer;
 import java.util.Scanner;
 
 public class ModificaArquivoTexto {
-
     public static void modificar(File file) {
         if (file.exists()) {
             if (file.isFile()) {
